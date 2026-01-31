@@ -13,7 +13,6 @@
 
 **Water Infrastructure Management System for Non-Revenue Water Prevention**
 
-*Built for the National Water Supply and Drainage Board (NWSDB)*
 
 </div>
 
