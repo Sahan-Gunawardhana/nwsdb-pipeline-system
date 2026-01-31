@@ -1,119 +1,188 @@
 # NWSDB Pipeline Management System
 
-A water pipeline infrastructure management system built for the National Water Supply and Drainage Board (NWSDB) to help reduce Non-Revenue Water (NRW) losses. This system combines a web-based admin dashboard with a mobile field worker app to track pipeline networks and coordinate repair activities.
+<div align="center">
 
-## What it does
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
+[![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)](https://firebase.google.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-The system tackles the problem of water loss in distribution networks by providing tools to:
+![License](https://img.shields.io/github/license/Sahan-Gunawardhana/nwsdb-pipeline-system?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/Sahan-Gunawardhana/nwsdb-pipeline-system?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/Sahan-Gunawardhana/nwsdb-pipeline-system?style=flat-square)
 
-- **Monitor pipeline health** with interactive maps showing risk levels and infrastructure data
-- **Track field repairs** in real-time as workers log issues using GPS-enabled mobile devices  
-- **Coordinate operations** between office managers and field technicians
-- **Analyze data** to identify problem areas and optimize maintenance schedules
-- **Reduce water loss** through better visibility and faster response times
+**Water Infrastructure Management System for Non-Revenue Water Prevention**
 
-Built specifically for water utility operations, it handles the workflow from detecting issues in the field to tracking repairs through completion.
+*Built for the National Water Supply and Drainage Board (NWSDB)*
 
-## System Components
+</div>
 
-### 🖥️ Web Dashboard (`web-app/`)
-Administrative interface for managers and office staff built with Next.js:
-- Interactive pipeline network visualization using Leaflet maps
-- Risk-based color coding (green = good condition, red = needs attention)
-- Real-time repair tracking and status updates
-- Data management for pipelines, zones, and infrastructure markers
-- User authentication and role management
-- Responsive design that works on desktop and mobile browsers
+---
 
-### 📱 Mobile Field App (`mobile-app/MobilePipelineViewer/`)
-React Native app for field technicians and repair crews:
-- GPS-based repair logging with precise location capture
-- Offline functionality for areas with poor connectivity
-- Predefined repair categories (leak, burst, valve issue, etc.)
-- Severity classification (low, medium, high, critical)
-- Photo capture and additional notes
-- Automatic sync when connection is restored
-- Dark/light theme support for outdoor visibility
+## Overview
 
-## Tech Stack
+A comprehensive cross-platform solution designed to reduce water loss in distribution networks through real-time monitoring, field repair tracking, and coordinated operations management.
 
-**Web App:**
-- Next.js 14 with TypeScript
-- Tailwind CSS + shadcn/ui components  
-- Leaflet for interactive maps
-- Firebase for backend
+**Key Capabilities:**
+- Interactive pipeline network visualization with risk assessment
+- GPS-enabled mobile repair logging for field technicians  
+- Real-time data synchronization between web and mobile platforms
+- Offline functionality with automatic sync when connectivity returns
+- Comprehensive analytics for maintenance optimization
 
-**Mobile App:**
-- React Native with Expo
-- TypeScript
-- React Native Maps
-- Firebase sync
-- Offline support with AsyncStorage
+## Architecture
+
+<table>
+<tr>
+<td width="50%" align="center">
+
+### Web Dashboard
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+
+**Administrative Interface**
+
+- Interactive pipeline network maps
+- Risk-based color coding system
+- Real-time repair tracking
+- Data management interface
+- User authentication & roles
+- Responsive web design
+
+</td>
+<td width="50%" align="center">
+
+### Mobile Field App
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat&logo=expo&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+
+**Field Worker Interface**
+
+- GPS-based repair logging
+- Offline functionality
+- Repair categorization
+- Photo capture capability
+- Auto-sync when online
+- Cross-platform compatibility
+
+</td>
+</tr>
+</table>
+
+## Technology Stack
+
+<div align="center">
+
+### Frontend Technologies
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
+### Styling & UI
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Radix UI](https://img.shields.io/badge/Radix%20UI-161618?style=for-the-badge&logo=radix-ui&logoColor=white)
+
+### Backend & Database
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+![Firestore](https://img.shields.io/badge/Firestore-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+
+### Development Tools
+![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+
+</div>
 
 ## Getting Started
 
 ### Prerequisites
 
-You'll need:
-- Node.js (version 16 or higher)
-- npm or yarn
-- A Firebase project
-- Expo CLI: `npm install -g @expo/cli`
+![Node.js](https://img.shields.io/badge/Node.js-16+-43853D?style=flat&logo=node.js&logoColor=white)
+![npm](https://img.shields.io/badge/npm-latest-CB3837?style=flat&logo=npm&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-Project-039BE5?style=flat&logo=Firebase&logoColor=white)
+![Expo CLI](https://img.shields.io/badge/Expo_CLI-latest-000020?style=flat&logo=expo&logoColor=white)
 
-### 1. Clone and Install
+### Installation
 
 ```bash
-git clone <this-repo>
+# Clone the repository
+git clone https://github.com/Sahan-Gunawardhana/nwsdb-pipeline-system.git
 cd nwsdb-pipeline-system
 
-# Install web app
+# Install web app dependencies
 cd web-app
 npm install
 
-# Install mobile app
+# Install mobile app dependencies
 cd ../mobile-app/MobilePipelineViewer
 npm install
 ```
 
-### 2. Firebase Setup
+### Firebase Configuration
 
-Create a Firebase project at https://console.firebase.google.com and:
+<details>
+<summary><strong>Database Setup Instructions</strong></summary>
 
-1. Enable Firestore Database
-2. Set up these collections: `pipelines`, `zones`, `markers`, `repairs`
-3. Get your config from Project Settings > General > Your apps
+1. **Create Firebase Project**
+   - Visit [Firebase Console](https://console.firebase.google.com/)
+   - Create new project
+   - Enable Firestore Database
 
-### 3. Environment Configuration
+2. **Required Collections**
+   ```
+   pipelines/    # Pipeline infrastructure data
+   zones/        # Geographic management areas  
+   markers/      # Infrastructure points of interest
+   repairs/      # Field repair logs
+   ```
 
-**For the web app:**
-```bash
-cd web-app
-cp .env.example .env
-# Edit .env with your Firebase config
-```
+3. **Get Configuration Keys**
+   - Project Settings → General → Your apps
+   - Copy Firebase config object
 
-**For the mobile app:**
-```bash
-cd mobile-app/MobilePipelineViewer
-cp .env.example .env  
-# Edit .env with your Firebase config
-```
+</details>
 
-### 4. Run the Apps
+### Environment Setup
 
-**Web dashboard:**
+| Web App | Mobile App |
+|---------|------------|
+| `cd web-app` | `cd mobile-app/MobilePipelineViewer` |
+| `cp .env.example .env` | `cp .env.example .env` |
+| Edit `.env` with Firebase config | Edit `.env` with Firebase config |
+
+### Running the Applications
+
+<table>
+<tr>
+<td width="50%" align="center">
+
+**Web Dashboard**
+
+![Next.js](https://img.shields.io/badge/localhost:3000-000000?style=flat&logo=nextdotjs&logoColor=white)
+
 ```bash
 cd web-app
 npm run dev
 ```
-Opens at http://localhost:3000
 
-**Mobile app:**
+</td>
+<td width="50%" align="center">
+
+**Mobile App**
+
+![Expo](https://img.shields.io/badge/Expo_Go-000020?style=flat&logo=expo&logoColor=white)
+
 ```bash
 cd mobile-app/MobilePipelineViewer
 npx expo start
 ```
-Scan QR code with Expo Go app or press 'i' for iOS simulator
+
+</td>
+</tr>
+</table>
 
 ## How the system works
 
